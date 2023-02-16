@@ -16,11 +16,8 @@ namespace PathCmd.Commands
 
         [Parameter("path", "p")]
         public string Path { get; set; } = null!;
-
-        [Parameter("scope", "s", true, "machine")]
-        public string Scope { get; set; } = null!;
         
-        [Parameter("force", "f", true)]
+        [Parameter("force", "F", true)]
         public bool Force { get; set; }
 
         public void Run()

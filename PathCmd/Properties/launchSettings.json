@@ -1,8 +1,7 @@
 {
   "profiles": {
     "PathCmd": {
-      "commandName": "Project",
-      "commandLineArgs": "add -p \"C:\\Program Files\\Notepad++\\notepad++.exe\""
+      "commandName": "Project"
     }
   }
 }

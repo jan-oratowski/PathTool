@@ -1,16 +1,14 @@
-﻿using PathCmd.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Formats.Asn1.AsnWriter;
+﻿using GoCommando;
+using PathCmd.Services;
 
 namespace PathCmd.Commands
 {
     internal class CommandBase
     {
         protected IEnvVarService? _envVarService;
+
+        [Parameter("scope", "s", true, "machine")]
+        public string Scope { get; set; } = null!;
 
         protected bool UseCorrectEnvService(string scope)
         {
